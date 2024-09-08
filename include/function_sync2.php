@@ -146,7 +146,7 @@ while ($row = pwg_db_fetch_assoc($result))
             	continue;
             }
             $output_dir = dirname($row['path']) . '/pwg_representative/';
-            //$output_dir = PWG_DERIVATIVE_DIR . dirname($row['path']) . '/pwg_representative/';
+            $output_dir = PWG_DERIVATIVE_DIR . dirname($row['path']) . '/pwg_representative/';
             $in = $filename;
             $out = $output_dir.$file_wo_ext['filename'].'.'.$sync_options['output'];
             /* Report it */
