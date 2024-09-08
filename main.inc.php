@@ -210,7 +210,7 @@ function vjs_render_media($content, $picture)
 	// Guess the poster extension
 	$file_wo_ext = pathinfo($picture['current']['path']);
 	$file_dir = dirname($picture['current']['path']);
-	$poster = embellish_url( $picture['current']['src_image']->get_path() );
+	$poster = embellish_url(  PWG_DERIVATIVE_DIR . $picture['current']['src_image']->get_path() );
 	//print $poster;
 
 	// Try to find multiple video source
